@@ -56,11 +56,20 @@ html {
 
 }
 
-.buttonPlus button{
+/* .Button_plus {
+  display: flex;
+  flex-direction: row;
+} */
+
+.ButtonPlus {
+  background-color: #081E34;
+  color: white;
   border: none;
-}
-
-.buttonPlus {
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
   margin-right: 80px;
+  font-size: 24px;
 }
 
+/* Modal */

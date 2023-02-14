@@ -1,1 +1,0 @@
-export const Button_IMG_PATH = require('./Button Plus.png')

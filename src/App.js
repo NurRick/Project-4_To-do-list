@@ -10,9 +10,7 @@ function App() {
         <Header/>
         <MainButtons/>    
       </div>
-      <div className='Seaction2'>
         <ButtonPlus/>
-      </div>
     </div>
     
   );

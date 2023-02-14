@@ -1,0 +1,28 @@
+.Modal {
+    display: flex;
+    flex-direction: column;
+    width: 268px;
+    height: 234px;
+    background-color: #E4E6E7;
+    border-radius: 12px;
+    position: absolute;
+    left:70%;
+    margin-top: 180px;
+    padding: 16px;
+  }
+
+  .ModalInput {
+    height: 120px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  .ModalButton {
+    width: 76px;
+    height: 40px;
+    background-color: #081E34;
+    color: white;
+    border: none;
+    border-radius: 100px;
+  }
