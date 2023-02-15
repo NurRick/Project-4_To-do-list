@@ -21,9 +21,9 @@ function ButtonPlus() {
 
 
     return (
-        <div className="Button_plus">
+        <div>
             <button className="ButtonPlus" onClick={openModal}>+</button>
-            {isModalShown && <Modal addToDo={addToDo}/>}
+            <div>{isModalShown && <Modal addToDo={addToDo}/>}</div>
             {todos && todos.map((item, index)=> (
             <div key={index}>
                 <p>{item}</p>

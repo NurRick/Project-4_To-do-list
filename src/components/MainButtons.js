@@ -12,9 +12,11 @@ function MainButtons() {
           <button onClick={()=>setStateType('Done')}>Done</button>
           <button onClick={()=>setStateType('Trash')}>Trash</button>
         </div>
-        <div className="StateType">{stateType}</div>
+        
       </>
     );
   }
   
   export default MainButtons;
+
+
