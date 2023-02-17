@@ -1,0 +1,7 @@
+.TrashModal {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    padding: 12px 12px 12px 0px;
+
+}

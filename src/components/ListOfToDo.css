@@ -1,9 +1,0 @@
-.ListOfToDo {
-    display: flex;
-    flex-direction: row;
-}
-
-.Dots {
-    border: none;
-    padding: 0;
-}
