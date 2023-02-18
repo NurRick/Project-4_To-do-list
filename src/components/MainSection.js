@@ -39,6 +39,27 @@ function MainSection() {
     const [isTrashModalShown, setIsTrashModalShown] = useState(false);
     const [todos, setTodos] =useState([]);
 
+    // Переключение между баттонами
+    const [displayToDo, setDisplayToDo] = useState(true);
+    const [displayDone, setDisplayDone] = useState(false);
+    const [displayTrash, setDisplayTrash] = useState(false);
+
+    const showToDo = () => {
+        setDisplayToDo(true);
+        setDisplayDone(false);
+        setDisplayTrash(false)
+    }
+    const showDone = () => {
+        setDisplayToDo(false);
+        setDisplayDone(true);
+        setDisplayTrash(false)
+    }
+    const showTrash = () => {
+        setDisplayToDo(false);
+        setDisplayDone(false);
+        setDisplayTrash(true)
+    }
+
     const openModal = () => {
         setIsModalShown(!isModalShown);
     };
@@ -62,9 +83,9 @@ function MainSection() {
         <div className='Main'>
             <div className='AllButtons'>
                 <div className="buttons">
-                    <button onClick={()=>setStateType('To do')}>To Do</button>
-                    <button onClick={()=>setStateType('Done')}>Done</button>
-                    <button onClick={()=>setStateType('Trash')}>Trash</button>
+                    <button style={{backgroundColor: displayToDo ? 'rgba(8, 30, 52, 0.42)' : '', color:displayToDo ? 'white' : ''}} onClick={()=>{setStateType('To do'); showToDo()}}>To Do</button>
+                    <button style={{backgroundColor: displayDone ? 'rgba(8, 30, 52, 0.42)' : '', color:displayDone ? 'white' : ''}} onClick={()=>{setStateType('Done'); showDone()}}>Done</button>
+                    <button style={{backgroundColor: displayTrash ? 'rgba(8, 30, 52, 0.42)' : '', color:displayTrash ? 'white' : ''}} onClick={()=>{setStateType('Trash'); showTrash()}}>Trash</button>
                 </div>
                 <div className="Button_Plus">
                     <button className="ButtonPlus" onClick={openModal}>+</button>
