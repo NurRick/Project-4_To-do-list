@@ -5,6 +5,4 @@ function Header() {
         <p>Today is awesom day.The weather is awesom, you are awesom too!</p>
       </div>
     );
-  }
-  
-  export default Header;
+  } export default Header;

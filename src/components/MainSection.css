@@ -1,0 +1,105 @@
+.Main {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 80px 0px 80px;
+}
+/* Section AllButtons */
+
+.mainButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.buttons button {
+  color: #081E34;
+  width: 87px;
+  height: 40px;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.ButtonPlus {
+  background-color: #081E34;
+  color: white;
+  border: none;
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
+  font-size: 32px;
+}
+
+/* Section MainContent */
+
+.MainContent {
+  display: flex;
+  flex-direction: column;
+  padding-top: 64px;
+}
+
+.TitleDivider {
+  display: flex;
+  padding-bottom: 26px;
+  border-bottom: 2px solid rgba(21, 21, 23, 0.2);
+}
+
+.TitleName {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.ToDoList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 28px;
+  gap: 16px;
+}
+
+.ToDo_List {
+  display: flex;
+  align-items: center;
+}
+
+.Dots {
+  position: relative;
+  padding: 7px 10.5px 7px 11px;
+  width: 24px;
+  height: 24px;
+  
+}
+
+.Dots_img {
+  position: absolute;
+  left: 45.83%;
+  right: 43.75%;
+  top: 29.17%;
+  bottom: 29.17%;
+  width: 2.5px;
+  height: 10px;
+}
+
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #712fff;
+}
+
+label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  margin-left: 8px;
+}
+
+input[type="checkbox"]:checked + label.task-text {
+  text-decoration: line-through;
+  color: #959595;
+}
+
+
